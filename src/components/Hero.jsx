@@ -1,7 +1,8 @@
 import heroImg from "../assets/hero.svg";
 import { FaGithubSquare, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { Typewriter } from 'react-simple-typewriter'
 const Hero = () => {
-  return (
+    return (
     <div className="bg-emerald-100 py-48" id="hero">
       <div className=" align-element  grid  md:grid-cols-2 items-center gap-8">
         <article>
@@ -9,7 +10,15 @@ const Hero = () => {
             I&apos;m Sarafat
           </h1>
           <p className="mt-4 text-3xl text-slate-700 capitalize tracking-wide">
-            Front-end developer
+            <Typewriter
+            words={['Hello, World!','Front-end developer','React enthusiast','UI/UX designer','Tech enthusiast']}
+            loop={5}
+            cursor
+            cursorStyle='_'
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+            />
           </p>
           <p className="mt-2 text-lg text-slate-700 capitalize tracking-wide">
             Crafting seamless web solutions with passion, precision, and
